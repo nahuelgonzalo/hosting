@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="wiewport" content="width=device-width,initial-scale=1.0">
+	<title>Nahuel Girón - Developer en formacion</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<script src="https://kit.fontawesome.com/7aa36192fa.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+		<div class="contenedor-total">
+			<section class="nav-lateral" id="myTopnav">
+				<header >
+
+					<div>
+						
+						<h1>Nahuel Gonzalo Girón</h1>
+
+						<nav>
+					
+							<a href="index.html" class="presionado">Inicio</a>
+							<a href="#sobre-mi">Sobre Mi</a>
+							<a href="#estudios">Estudios</a>
+							<a href="#contactame">Contactame</a>
+						</nav>
+					</div>
+			
+				</header>
+			</section>
+			<section class="navbar-container__mobile">
+				<nav class="navbar-container__mobile__list">
+				  <label for="navbar" class="navbar-container__mobile__list__label">
+					<input type="checkbox" id="navbar" class="navbar-input">
+					<div class="navbar-open">
+					  <i class="fas fa-bars"></i>
+					</div>
+					<div class="navbar-close">
+					  <i class="fas fa-times"></i>
+					</div>
+					<div class="navbar-contet">
+					  <a href="index.html">
+						<i class="fas fa-home"></i>Inicio
+					  </a>
+					  <a href="#sobre-mi">
+						<i class="fas fa-user-alt"></i>Sobre Mi
+					  </a>                   
+					  <a href="#estudios">
+						<i class="fas fa-user-graduate"></i>Estudios
+					  </a>                   
+					  <a href="#contactame">
+						<i class="fas fa-comments"></i>Contactame
+					  </a>
+					</div>
+				  </label>
+				</nav>
+			  </section>
+			<section class="contenedor-principal">
+				<section class="contenedor-foto">
+					<div >
+						<img src="images/foto.jpg" alt="imagen" class="mi-imagen">
+						<h2> Hola ! <br>Soy Nahuel Gonzalo Girón</h2>
+						<span>Desarrollador en formación</span>
+					</div>
+					<div class="redes-sociales">
+						<a href="https://www.linkedin.com/in/nahuel-giron-96331a194/"  target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/nahuelgonzalo"  target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://api.whatsapp.com/send/?phone=542215455404text&app_absent=0"  target="_blank">
+							<i class="fab fa-whatsapp"></i>
+						</a>	
+					</div>
+				</section>
+				<section class="contenedor-sobre-mi" name="sobre-mi" id="sobre-mi">
+					<div>
+						<h2>Sobre Mi</h2>
+						<p>Hola soy Nahuel Girón,naci en 1990  y soy estudiante de la Facultad de Informatica Unlp .Buscando en dar mis primeros pasos en el sector laboral.</p>
+					</div>
+					<div class="habilidades">
+						<h2>Habilidades</h2>
+						
+						<div class="barra-progreso">
+							<h3>HTML</h3>
+						
+						
+							<h3>CSS</h3>
+						
+						
+							<h3>JS</h3>
+						
+						
+							<h3>JAVA</h3>
+						</div>
+					</div>
+				</section>
+				<section class="contenedor-estudios" name="estudios" id="estudios"> 
+					<h2>Estudios</h2>
+					<div class="estudios">
+						<div class="estudios-info">
+							<img src="images/alconada it.jpg" alt="alconada it">
+							<span class="fecha">Agosto 2019 - Diciembre 2019</span>
+							<span class="academia">Alconada IT</span>
+							<p>Aprendimos a desarrollar sitios web, en HTML5, CSS3, adaptar librerías Jquery. Sitios adaptados a dispositivos móviles.Última tendencia del maquetado con Flexbox y Bootstrap.</p>
+						</div>
+						<div class="estudios-info"> 
+							<img src="images/coursera.jpg" alt="coursera">
+							<span class="fecha">Diciembre 2020 Finalizado</span>
+							<span class="academia">Coursera :Introducción a la programación orientada a objetos en Java</span>
+							<p>Entender los conceptos básicos de programación orientada a objetos e implementarlos en lenguaje Java.  
+							Construir interfaces gráficas de usuario amigables, estructuradas y fáciles de mantener.  
+							Utilizar e implementar algoritmos iterativos sobre colecciones de elementos.  
+							Implementar, adaptar, utilizar y depurar algunos de los algoritmos iterativos de ordenamiento clásicos sobre estructuras de datos lineales. </p>
+						</div>
+					</div>
+				</section>
+				<section class="form_wrap" name="contactame" id="contactame">
+
+					<section class="cantact_info">
+						<section class="info_title">
+							<span class="fa fa-user-circle"></span>
+							<h2>INFORMACION<br>DE CONTACTO</h2>
+						</section>
+						<section class="info_items">
+							<p><span class="fa fa-envelope"></span> giron.nahuel@gmail.com</p>
+							<p><span class="fa fa-mobile"></span> +9(54) 221-5455404</p>
+						</section>
+					</section>
+			
+					<form action="enviar.php" method="post" class="form_contact">
+						<h2>Envia un mensaje</h2>
+						<div class="user_info">
+							<label for="names">Nombres *</label>
+							<input type="text" id="names" name="nombre" required>
+			
+							<label for="phone">Telefono / Celular</label>
+							<input type="text" id="phone" name="telefono">
+			
+							<label for="email">Correo electronico *</label>
+							<input type="text" id="email" name="correo" required>
+			
+							<label for="mensaje">Mensaje *</label>
+							<textarea id="mensaje" name="mensaje" required></textarea>
+			
+							<input type="submit" value="Enviar Mensaje" id="btnSend">
+						</div>
+					</form>
+			
+				</section>
+				<footer>
+					<p>Girón Nahuel </p>
+				</footer>
+			</section>
+		</div>
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "nav-lateral") {
+				x.className += " responsive";
+			  } else {
+				x.className = "nav-lateral";
+			  }
+			}
+		</script>
+</body>
+
+</html>
